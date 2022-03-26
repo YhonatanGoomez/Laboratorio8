@@ -6,7 +6,7 @@
     <!--<settings>
         <setting name="logImpl" value="LOG4J"/>        
     </settings>-->
-    
+
     <properties resource="config.properties">
     </properties>
     <typeAliases>
@@ -14,7 +14,7 @@
         <typeAlias type="edu.eci.cvds.samples.entities.Item" alias="Item"/>
         <typeAlias type="edu.eci.cvds.samples.entities.ItemRentado" alias="ItemRentado"/>
         <typeAlias type="edu.eci.cvds.samples.entities.TipoItem" alias="TipoItem"/>
-    </typeAliases>	
+    </typeAliases>
 
     <environments default="development">
         <environment id="development">

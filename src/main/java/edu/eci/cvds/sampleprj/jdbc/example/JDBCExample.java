@@ -83,9 +83,19 @@ public class JDBCExample {
         //Crear preparedStatement
         //Asignar parámetros
         //usar 'execute'
+        String InsertString =
+                "INSERT INTO ORD_PRODUCTOS VALUES (?, ?, ?)";
+        try (PreparedStatement InsertProductos = con.prepareStatement(InsertString)){
+            InsertProductos.setInt(1, codigo);
+            InsertProductos.setString(2, nombre);
+            InsertProductos.setInt(3, precio);
+            InsertProductos.executeQuery();
+            con.commit();
+        }
+        catch (SQLException e) {
+            System.err.print("Transaction is being rolled back");
+        }
 
-
-        con.commit();
 
     }
 
