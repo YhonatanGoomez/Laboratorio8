@@ -67,6 +67,4 @@ public class ItemRentado implements Serializable {
         return "ItemRentado{" + "id=" + id + ", item=" + item + ", fechainiciorenta=" + fechainiciorenta + ", fechafinrenta=" + fechafinrenta + '}';
     }
 
-    
-    
 }
